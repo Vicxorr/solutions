@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="solutions.exe — Ingeniería de software a medida: desarrollo web, infraestructura cloud, inteligencia artificial y ciberseguridad." />
+  <title>solutions.exe — Ingeniería &amp; Software</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Navegación -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo" aria-label="solutions.exe Inicio">
+        <span class="logo__name">solutions</span><span class="logo__ext">.exe</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li><a href="#servicios" class="nav__link">Servicios</a></li>
+          <li><a href="#proyectos" class="nav__link">Proyectos</a></li>
+          <li><a href="#proceso" class="nav__link">Proceso</a></li>
+          <li><a href="#planes" class="nav__link">Planes</a></li>
+          <li><a href="#faq" class="nav__link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Cambiar tema claro u oscuro" title="Cambiar tema">
+          <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+          </svg>
+          <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="#contacto" class="btn btn--primary btn--sm header__cta">Contacto</a>
+
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="inicio">
+      <div class="container">
+        <div class="hero__content">
+          <p class="eyebrow">Estudio de ingeniería de software</p>
+          <h1 class="hero__title">
+            Software escalable y arquitectura técnica sin complejidad innecesaria.
+          </h1>
+          <p class="hero__subtitle">
+            En <strong>solutions.exe</strong> diseñamos y construimos plataformas web, infraestructura cloud y soluciones de automatización pensadas para operar en producción.
+          </p>
+          <div class="hero__actions">
+            <a href="#contacto" class="btn btn--primary">Iniciar un proyecto</a>
+            <a href="#proyectos" class="btn btn--ghost">Ver casos de éxito</a>
+          </div>
+        </div>
+
+        <div class="hero__meta">
+          <span class="hero__meta-label">Stack</span>
+          <ul class="tech-list" aria-label="Tecnologías principales">
+            <li>TypeScript</li>
+            <li>React / Next.js</li>
+            <li>Node.js</li>
+            <li>Python &amp; AI</li>
+            <li>AWS / Docker</li>
+          </ul>
+        </div>
+
+        <!-- Métricas -->
+        <div class="stats__grid" aria-label="Indicadores de impacto">
+          <article class="stat-item">
+            <div class="stat-item__number"><span data-counter="120">120</span>+</div>
+            <p class="stat-item__label">Proyectos en producción</p>
+          </article>
+          <article class="stat-item">
+            <div class="stat-item__number"><span data-counter="45">45</span>+</div>
+            <p class="stat-item__label">Empresas asesoradas</p>
+          </article>
+          <article class="stat-item">
+            <div class="stat-item__number"><span data-counter="99" data-suffix=".9%">99.9%</span></div>
+            <p class="stat-item__label">Uptime promedio</p>
+          </article>
+          <article class="stat-item">
+            <div class="stat-item__number"><span data-counter="24">24</span>h</div>
+            <p class="stat-item__label">Respuesta en soporte crítico</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="section" id="servicios">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">01 / Servicios</span>
+          <h2 class="section__title">Capacidades técnicas de principio a fin</h2>
+          <p class="section__desc">
+            Acompañamos a tu equipo desde la definición arquitectónica hasta la operación continua, priorizando claridad, rendimiento y mantenibilidad.
+          </p>
+        </div>
+
+        <div class="services__grid">
+          <article class="service-card">
+            <span class="service-card__num">01</span>
+            <h3>Desarrollo Web &amp; Software</h3>
+            <p>Aplicaciones web modernas, plataformas SaaS y APIs diseñadas para crecer sin acumular deuda técnica.</p>
+            <ul class="service-card__list">
+              <li>Frontend accesible y rápido</li>
+              <li>APIs REST/GraphQL y microservicios</li>
+              <li>SEO técnico y Core Web Vitals</li>
+            </ul>
+            <a href="#contacto" class="text-link" data-service="Desarrollo Web & Software">Solicitar evaluación →</a>
+          </article>
+
+          <article class="service-card">
+            <span class="service-card__num">02</span>
+            <h3>Apps Móviles</h3>
+            <p>Experiencias fluidas para iOS y Android con soporte offline y analítica integrada.</p>
+            <ul class="service-card__list">
+              <li>React Native y Flutter</li>
+              <li>Notificaciones push y pagos</li>
+              <li>Publicación en App Store y Play Store</li>
+            </ul>
+            <a href="#contacto" class="text-link" data-service="Apps Móviles">Solicitar evaluación →</a>
+          </article>
+
+          <article class="service-card">
+            <span class="service-card__num">03</span>
+            <h3>Cloud &amp; DevOps</h3>
+            <p>Migración a la nube, automatización de despliegues y optimización de costos en AWS, Azure o GCP.</p>
+            <ul class="service-card__list">
+              <li>Infraestructura como código (Terraform)</li>
+              <li>CI/CD y contenedores Docker/Kubernetes</li>
+              <li>Observabilidad, alertas y backups</li>
+            </ul>
+            <a href="#contacto" class="text-link" data-service="Cloud & DevOps">Solicitar evaluación →</a>
+          </article>
+
+          <article class="service-card">
+            <span class="service-card__num">04</span>
+            <h3>IA &amp; Automatización</h3>
+            <p>Asistentes internos, búsqueda documental y automatización de procesos conectados a tus datos.</p>
+            <ul class="service-card__list">
+              <li>Búsqueda semántica y sistemas RAG</li>
+              <li>Automatización de flujos operativos</li>
+              <li>Paneles de métricas en tiempo real</li>
+            </ul>
+            <a href="#contacto" class="text-link" data-service="IA & Automatización">Solicitar evaluación →</a>
+          </article>
+
+          <article class="service-card">
+            <span class="service-card__num">05</span>
+            <h3>Ciberseguridad</h3>
+            <p>Evaluación y endurecimiento de aplicaciones, infraestructura y controles de acceso.</p>
+            <ul class="service-card__list">
+              <li>Auditoría web y APIs (OWASP)</li>
+              <li>Gestión de identidades, SSO y cifrado</li>
+              <li>Planes de respuesta ante incidentes</li>
+            </ul>
+            <a href="#contacto" class="text-link" data-service="Ciberseguridad">Solicitar evaluación →</a>
+          </article>
+
+          <article class="service-card">
+            <span class="service-card__num">06</span>
+            <h3>Diseño UX/UI &amp; Sistemas</h3>
+            <p>Interfaces claras orientadas a uso real, prototipos funcionales y sistemas de diseño mantenibles.</p>
+            <ul class="service-card__list">
+              <li>Arquitectura de información y flujos</li>
+              <li>Design Systems en Figma y código</li>
+              <li>Accesibilidad WCAG AA</li>
+            </ul>
+            <a href="#contacto" class="text-link" data-service="Diseño UX/UI">Solicitar evaluación →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Casos de éxito -->
+    <section class="section" id="proyectos">
+      <div class="container">
+        <div class="section__head section__head--row">
+          <div>
+            <span class="eyebrow">02 / Casos de éxito</span>
+            <h2 class="section__title">Trabajo seleccionado</h2>
+          </div>
+
+          <div class="filter-bar" role="tablist" aria-label="Filtrar proyectos por categoría">
+            <button class="filter-btn active" type="button" data-filter="all" role="tab" aria-selected="true">Todos</button>
+            <button class="filter-btn" type="button" data-filter="web" role="tab" aria-selected="false">Web &amp; SaaS</button>
+            <button class="filter-btn" type="button" data-filter="cloud" role="tab" aria-selected="false">Cloud</button>
+            <button class="filter-btn" type="button" data-filter="ia" role="tab" aria-selected="false">IA</button>
+            <button class="filter-btn" type="button" data-filter="mobile" role="tab" aria-selected="false">Mobile</button>
+          </div>
+        </div>
+
+        <div class="projects__grid" id="projectsGrid">
+          <article class="project-card" data-category="web">
+            <div class="project-card__top">
+              <span class="project-card__tag">Web &amp; SaaS</span>
+              <span class="project-card__metric">+64% conversión</span>
+            </div>
+            <h3>FinFlow — Banca Corporativa</h3>
+            <p>Rediseño completo de plataforma de tesorería multi-moneda con panel analítico en tiempo real.</p>
+            <div class="project-card__footer">
+              <div class="project-card__stack">
+                <span>Next.js</span><span>Node.js</span><span>PostgreSQL</span>
+              </div>
+              <button class="text-btn open-project" type="button" data-project="finflow">Ver detalles →</button>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="cloud">
+            <div class="project-card__top">
+              <span class="project-card__tag">Cloud &amp; DevOps</span>
+              <span class="project-card__metric">-42% costos AWS</span>
+            </div>
+            <h3>LogiTrack — Infraestructura Global</h3>
+            <p>Migración a Kubernetes y despliegue multi-región para 2 millones de eventos diarios de rastreo.</p>
+            <div class="project-card__footer">
+              <div class="project-card__stack">
+                <span>AWS</span><span>Kubernetes</span><span>Terraform</span>
+              </div>
+              <button class="text-btn open-project" type="button" data-project="logitrack">Ver detalles →</button>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="ia">
+            <div class="project-card__top">
+              <span class="project-card__tag">IA &amp; Datos</span>
+              <span class="project-card__metric">-70% tiempo soporte</span>
+            </div>
+            <h3>MediCore — Asistente Clínico IA</h3>
+            <p>Motor de búsqueda documental y triaje asistido con privacidad estricta y trazabilidad completa.</p>
+            <div class="project-card__footer">
+              <div class="project-card__stack">
+                <span>Python</span><span>RAG</span><span>FastAPI</span>
+              </div>
+              <button class="text-btn open-project" type="button" data-project="medicore">Ver detalles →</button>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="mobile">
+            <div class="project-card__top">
+              <span class="project-card__tag">Mobile</span>
+              <span class="project-card__metric">4.9 ★ en tiendas</span>
+            </div>
+            <h3>VoltGo — Movilidad Eléctrica</h3>
+            <p>App móvil para localización de cargadores, reservas instantáneas y pagos sin contacto.</p>
+            <div class="project-card__footer">
+              <div class="project-card__stack">
+                <span>React Native</span><span>GraphQL</span><span>Stripe</span>
+              </div>
+              <button class="text-btn open-project" type="button" data-project="voltgo">Ver detalles →</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proceso -->
+    <section class="section" id="proceso">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">03 / Proceso</span>
+          <h2 class="section__title">Cómo trabajamos</h2>
+        </div>
+
+        <div class="process__grid">
+          <article class="process-step">
+            <span class="process-step__num">01</span>
+            <h3>Descubrimiento</h3>
+            <p>Analizamos objetivos de negocio, usuarios y restricciones técnicas para definir un alcance claro.</p>
+          </article>
+          <article class="process-step">
+            <span class="process-step__num">02</span>
+            <h3>Arquitectura &amp; UX</h3>
+            <p>Prototipamos flujos clave y diseñamos una arquitectura segura, modular y fácil de escalar.</p>
+          </article>
+          <article class="process-step">
+            <span class="process-step__num">03</span>
+            <h3>Desarrollo iterativo</h3>
+            <p>Sprints cortos con entregas verificables cada semana, pruebas automatizadas y comunicación directa.</p>
+          </article>
+          <article class="process-step">
+            <span class="process-step__num">04</span>
+            <h3>Lanzamiento &amp; Escala</h3>
+            <p>Despliegue sin interrupciones, monitoreo continuo y evolución basada en métricas reales.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Planes -->
+    <section class="section" id="planes">
+      <div class="container">
+        <div class="section__head section__head--row">
+          <div>
+            <span class="eyebrow">04 / Planes</span>
+            <h2 class="section__title">Modelos de colaboración</h2>
+            <p class="section__desc">Modalidad mensual flexible o tarifa anual con 20% de descuento.</p>
+          </div>
+
+          <div class="billing-toggle" role="group" aria-label="Frecuencia de facturación">
+            <span class="billing-label active" id="labelMonthly">Mensual</span>
+            <button class="switch" id="billingSwitch" type="button" role="switch" aria-checked="false" aria-label="Alternar facturación anual">
+              <span class="switch__thumb"></span>
+            </button>
+            <span class="billing-label" id="labelAnnual">Anual <em class="save-badge">-20%</em></span>
+          </div>
+        </div>
+
+        <div class="pricing__grid">
+          <article class="price-card">
+            <div class="price-card__head">
+              <h3>Startup MVP</h3>
+              <p class="price-card__desc">Para validar producto y lanzar rápido al mercado.</p>
+            </div>
+            <div class="price-card__amount">
+              <span class="currency">$</span>
+              <span class="price-value" data-monthly="2400" data-annual="1920">2,400</span>
+              <span class="period">/mes</span>
+            </div>
+            <ul class="price-card__features">
+              <li>1 squad dedicado (Frontend + Backend)</li>
+              <li>Diseño UX/UI en Figma incluido</li>
+              <li>Entregas semanales y demo en vivo</li>
+              <li>Infraestructura cloud inicial</li>
+            </ul>
+            <a href="#contacto" class="btn btn--ghost btn--full" data-plan="Startup MVP">Elegir Startup MVP</a>
+          </article>
+
+          <article class="price-card price-card--featured">
+            <div class="price-card__head">
+              <div class="price-card__title-row">
+                <h3>Growth &amp; Escala</h3>
+                <span class="featured-tag">Recomendado</span>
+              </div>
+              <p class="price-card__desc">Para equipos que aceleran su roadmap y modernizan sistemas.</p>
+            </div>
+            <div class="price-card__amount">
+              <span class="currency">$</span>
+              <span class="price-value" data-monthly="4900" data-annual="3920">4,900</span>
+              <span class="period">/mes</span>
+            </div>
+            <ul class="price-card__features">
+              <li>Equipo multidisciplinario (Dev + DevOps + QA)</li>
+              <li>Integraciones IA y automatización</li>
+              <li>Auditoría de seguridad y rendimiento</li>
+              <li>Soporte prioritario SLA 99.9%</li>
+            </ul>
+            <a href="#contacto" class="btn btn--primary btn--full" data-plan="Growth & Escala">Elegir Growth</a>
+          </article>
+
+          <article class="price-card">
+            <div class="price-card__head">
+              <h3>Enterprise</h3>
+              <p class="price-card__desc">Arquitectura a medida, cumplimiento estricto y dedicación total.</p>
+            </div>
+            <div class="price-card__amount">
+              <span class="price-value price-value--custom">A medida</span>
+            </div>
+            <ul class="price-card__features">
+              <li>Múltiples squads y Tech Lead dedicado</li>
+              <li>Arquitectura cloud multi-región y alta disponibilidad</li>
+              <li>Cumplimiento ISO / SOC2 y pentesting continuo</li>
+              <li>Soporte 24/7 con guardias dedicadas</li>
+            </ul>
+            <a href="#contacto" class="btn btn--ghost btn--full" data-plan="Enterprise">Hablar con ventas</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="section" aria-label="Testimonios de clientes">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">05 / Testimonios</span>
+          <h2 class="section__title">Referencias</h2>
+        </div>
+
+        <div class="testimonials__grid">
+          <blockquote class="testimonial-card">
+            <p>“solutions.exe redujo a la mitad el tiempo de carga de nuestra plataforma y nos ayudó a escalar sin fricciones durante el pico de fin de año.”</p>
+            <footer>
+              <strong>Laura Méndez</strong>
+              <span>CTO en FinFlow</span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card">
+            <p>“Su enfoque en arquitectura cloud nos permitió ahorrar más de un 40% en infraestructura mientras mejoramos la estabilidad del sistema.”</p>
+            <footer>
+              <strong>Carlos Ríos</strong>
+              <span>VP de Ingeniería en LogiTrack</span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card">
+            <p>“La claridad en cada sprint y la calidad del código entregado superaron nuestras expectativas. Se integran como parte de nuestro equipo.”</p>
+            <footer>
+              <strong>Andrea Silva</strong>
+              <span>Fundadora de VoltGo</span>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container container--narrow">
+        <div class="section__head">
+          <span class="eyebrow">06 / FAQ</span>
+          <h2 class="section__title">Preguntas frecuentes</h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>¿Cuánto tiempo toma lanzar un proyecto desde cero?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p>Un MVP funcional suele estar listo entre 4 y 8 semanas, dependiendo de las integraciones. Desde la primera semana entregamos avances navegables y código en repositorio.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>¿El código fuente y la propiedad intelectual son míos?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p>Sí, 100%. Desde el primer día trabajamos en tus repositorios, entregamos documentación técnica completa y transferimos toda la propiedad intelectual al cliente.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>¿Pueden integrarse con nuestro equipo técnico actual?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p>Totalmente. Podemos operar como un squad autónomo o integrarnos en tus rituales ágiles, herramientas (Jira, Linear, GitHub) y estándares de revisión de código.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>¿Ofrecen soporte y mantenimiento después del lanzamiento?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p>Sí. Contamos con planes de evolución continua, actualizaciones de seguridad, monitoreo proactivo y soporte con SLA adaptado a tu operación.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="section" id="contacto">
+      <div class="container">
+        <div class="contact__grid">
+          <div class="contact__info">
+            <span class="eyebrow">07 / Contacto</span>
+            <h2 class="section__title">Cuéntanos sobre tu proyecto</h2>
+            <p class="section__desc">
+              Completa el formulario y recibirás una estimación preliminar y agenda para una sesión técnica sin compromiso.
+            </p>
+
+            <dl class="contact-details">
+              <div>
+                <dt>Correo</dt>
+                <dd>hola@solutionsexe.demo</dd>
+              </div>
+              <div>
+                <dt>Ubicación</dt>
+                <dd>Remoto · Latinoamérica &amp; España</dd>
+              </div>
+              <div>
+                <dt>Horario</dt>
+                <dd>Lunes a Viernes · 9:00 – 18:00</dd>
+              </div>
+            </dl>
+
+            <p class="portfolio-note">
+              <strong>Nota:</strong> solutions.exe es un proyecto conceptual de portafolio construido con HTML, CSS y JavaScript puro.
+            </p>
+          </div>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Nombre completo *</label>
+                <input type="text" id="name" name="name" placeholder="Sofía Morales" required />
+                <span class="field-error" aria-live="polite"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Correo corporativo *</label>
+                <input type="email" id="email" name="email" placeholder="sofia@empresa.com" required />
+                <span class="field-error" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="service">Servicio de interés *</label>
+                <select id="service" name="service" required>
+                  <option value="">Selecciona una opción</option>
+                  <option value="Desarrollo Web & Software">Desarrollo Web &amp; Software</option>
+                  <option value="Apps Móviles">Apps Móviles</option>
+                  <option value="Cloud & DevOps">Cloud &amp; DevOps</option>
+                  <option value="IA & Automatización">IA &amp; Automatización</option>
+                  <option value="Ciberseguridad">Ciberseguridad</option>
+                  <option value="Diseño UX/UI">Diseño UX/UI</option>
+                </select>
+                <span class="field-error" aria-live="polite"></span>
+              </div>
+              <div class="form-group">
+                <label for="budget">Presupuesto estimado</label>
+                <select id="budget" name="budget">
+                  <option value="Menos de $5,000">Menos de $5,000 USD</option>
+                  <option value="$5,000 - $15,000" selected>$5,000 – $15,000 USD</option>
+                  <option value="$15,000 - $30,000">$15,000 – $30,000 USD</option>
+                  <option value="Más de $30,000">Más de $30,000 USD</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Detalles del proyecto *</label>
+              <textarea id="message" name="message" rows="4" placeholder="Describe brevemente qué necesitas construir, plazos o integraciones clave..." required></textarea>
+              <span class="field-error" aria-live="polite"></span>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+              Enviar solicitud
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#inicio" class="logo">
+          <span class="logo__name">solutions</span><span class="logo__ext">.exe</span>
+        </a>
+        <p>Ingeniería de software, cloud e inteligencia artificial.</p>
+      </div>
+
+      <div class="footer__links">
+        <a href="#servicios">Servicios</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#planes">Planes</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+
+      <p class="footer__copy">© <span id="year">2026</span> solutions.exe</p>
+    </div>
+  </footer>
+
+  <!-- Modal de detalles de proyecto -->
+  <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__dialog">
+      <button class="modal__close" type="button" aria-label="Cerrar modal" data-close-modal>&times;</button>
+      <span class="eyebrow" id="modalCategory">Categoría</span>
+      <h3 id="modalTitle">Título del proyecto</h3>
+      <p id="modalSummary" class="modal__summary"></p>
+      <div class="modal__metrics" id="modalMetrics"></div>
+      <div class="modal__section">
+        <h4>Desafío</h4>
+        <p id="modalChallenge"></p>
+      </div>
+      <div class="modal__section">
+        <h4>Solución implementada</h4>
+        <p id="modalSolution"></p>
+      </div>
+      <div class="modal__actions">
+        <a href="#contacto" class="btn btn--primary" data-close-modal>Quiero algo similar</a>
+        <button type="button" class="btn btn--ghost" data-close-modal>Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast de notificación -->
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <!-- Botón volver arriba -->
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Volver arriba" hidden>
+    ↑
+  </button>
+
+  <script src="jss/main.js"></script>
+</body>
+</html>
